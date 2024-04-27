@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width,intial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description"> This is a short survey form. Please give a time to complete this form to help us improve the platform.</p>
+    <form id="survey-form">
+    <fieldset>
+     <label for="name" id="name-label">name: <input id="name" type="text" placeholder="enter name" required/></label>
+     <label for="email" id="email-label">
+     email: <input type="email" id="email" placeholder="enter email" required/></label>
+     <label for="number" id="number-label">
+     age: <input type="number" id="number" placeholder="enter number" min= "11" max="40" minlength="10" required/></label>
+     </fieldset>
+     <fieldset>
+       <label for="dropdown">Gender:  <Select type="gender" id="dropdown">
+         <option value="">select one</option>
+           <option value="1">male</option>
+             <option value="2">Female</option>
+               <option value="3">other</option>
+       </select>
+       </label>
+       </fieldset>
+       <fieldset>
+         which role defines you the best?
+       <label for="tech-role">
+         <input type="radio" id="tech-role" value="role-type" name="role-type"class="inline"/>technical role</label>
+         <label for="non-tech">
+         <input type="radio" id="non-tech" value="role-type" name="role-type" class="inline"/> non-technical role</label>
+     </fieldset>
+     <fieldset>
+       what's your hobbies?
+       <label for="hobby1">
+         <input type="checkbox" id="hobby1" value="hobby" class="inline" checked>painting
+       </label>
+       <label for="hobby2">
+         <input type="checkbox" id="hobby2" value="hobby" class="inline">graphic Designing
+       </label>
+       <label for="hobby3">
+         <input type="checkbox" id="hobby3"value="hobby" class="inline">Coding
+       </label>
+<label for="hobby4">
+         <input type="checkbox" id="hobby4" value="hobby" class="inline">chess
+       </label>
+       <label for="hobby5">
+         <input type="checkbox" id="hobby5" value="hobby" class="inline">dancing
+       </label>
+       <label for="hobby6">
+         <input type="checkbox" id="hobby6" value="hobby" class="inline">singing
+       </label>
+       <label for="hobby7">
+         <input type="checkbox" id="hobby7" value="hobby" class="inline">Football/ basketball/ Volleyball
+       </label>
+       </fieldset>
+       <fieldset>Any Comment:
+         <label for="comment">
+           <textarea id="comment" name="comment" rows="3"cols="25"></textarea>
+         </label>
+       </fieldset>
+       <input type="submit" id="submit">
+    </form>
+</html>
